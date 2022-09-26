@@ -3,5 +3,5 @@ To start the application run the commands in the folder containing the package.j
 	
 	npm start
 	
-The application will go up on localhost:4200
+The application will serve on localhost:4200
 For the login and password fields, any value can be entered
