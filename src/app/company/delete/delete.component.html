@@ -1,0 +1,37 @@
+<div class="container main-container">
+    <h3>Are your sure to delete {{ company.name }} ?</h3>
+    <hr />
+
+    <div class="alert alert-danger" *ngIf="errors.length > 0">
+      <h3 id="msgRetorno">Ops! Something is with problems:</h3>
+        <ul>
+            <li *ngFor="let error of errors">{{ error }}</li>
+        </ul>
+    </div>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+        <label class="control-label">Name</label>
+    </dt>
+        <dd class="col-sm-10">
+            {{ company.name }}
+        </dd>
+        <dt class="col-sm-2">
+            <label class="control-label">Documento</label>
+    </dt>
+        <dd class="col-sm-10">
+            aaaaa
+        </dd>
+        <dt class="col-sm-2">
+            <label class="control-label">Ativo</label>
+    </dt>
+        <dd class="col-sm-10">
+            <input class="check-box" disabled="disabled" type="checkbox">
+        </dd>
+    </dl>
+
+    <div>
+        <a class="btn btn-danger" href="javascript:void(0)" (click)="deleteEvent()">Delete</a>&nbsp;
+        <a class="btn btn-info" [routerLink]="['/company/list']">Voltar</a>
+    </div>
+</div>

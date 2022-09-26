@@ -1,0 +1,49 @@
+<div class="container main-container">
+    <h1>Details {{ company.name }}</h1>
+
+    <div>
+        <h4>Readonly Information</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                <label class="control-label">Name</label>
+            </dt>
+            <dd class="col-sm-10">
+                {{ company.name }}
+            </dd>
+
+            <dt class="col-sm-2">
+                <label class="control-label">Exchange</label>
+            </dt>
+            <dd class="col-sm-10">
+                {{ company.exchange }}
+            </dd>
+
+            <dt class="col-sm-2">
+                <label class="control-label">ticker</label>
+            </dt>
+            <dd class="col-sm-10">
+                {{ company.ticker }}
+            </dd>
+
+            <dt class="col-sm-2">
+              <label class="control-label">ISIN</label>
+            </dt>
+            <dd class="col-sm-10">
+              {{ company.isin }}
+            </dd>
+
+            <dt class="col-sm-2">
+              <label class="control-label">Website</label>
+            </dt>
+            <dd class="col-sm-10">
+              {{ company.website }}
+            </dd>
+        </dl>
+    </div>
+
+    <div>
+        <a class="btn btn-dark" [routerLink]="['/company/edit',company.id]">Edit</a>&nbsp;
+        <a class="btn btn-info" [routerLink]="['/company/list']">Back</a>
+    </div>
+</div>
