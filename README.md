@@ -1,5 +1,6 @@
 To start the application run the commands in the folder containing the package.json file:
-	npm install
+	
+  npm install
 	
 	npm start
 	
